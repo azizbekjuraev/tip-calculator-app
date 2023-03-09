@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5daa8eb347.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -11,12 +15,15 @@
         <h1 id="splitter">SPLITTER</h1>
         <div class="container-white">
           <div class="left">
-            <h4>Bill</h4>
+            <h4 class="grey" id="bill">Bill</h4>
             <div class="bill-background">
-              <span>$ <input class="bill" type="text" placeholder="0" /></span>
+              <span class="icon"
+                ><i class="fa-sharp fa-solid fa-dollar-sign"></i
+              ></span>
+              <input class="bill" type="text" placeholder="0" />
             </div>
 
-            <h4>Select tip %</h4>
+            <h4 id="select" class="grey">Select tip %</h4>
             <div class="buttons">
               <button class="primary" id="5">5%</button>
               <button class="primary" id="10">10%</button>
@@ -25,17 +32,18 @@
               <button class="primary" id="50">50%</button>
               <button class="custom">Custom</button>
             </div>
-            <h4>Number of People</h4>
+            <h4 id="select" class="grey">Number of People</h4>
             <div class="bill-background">
-              <span>P <input class="split" type="text" placeholder="0" /></span>
+              <span class="icon"><i class="fa-solid fa-user"></i></span>
+              <input class="split" type="text" placeholder="0" />
             </div>
           </div>
           <div class="right">
             <div class="right-background-clr">
               <div class="right-cash">
                 <div class="left-text">
-                  <h3>Tip Amount</h3>
-                  <p>/ person</p>
+                  <h4>Tip Amount</h4>
+                  <p class="grey">/ person</p>
                 </div>
                 <div class="right-text">
                   <h1 id="tip-amount">$0.00</h1>
@@ -43,8 +51,8 @@
               </div>
               <div class="right-cash">
                 <div class="left-text total">
-                  <h3>Total</h3>
-                  <p>/ person</p>
+                  <h4>Total</h4>
+                  <p class="grey">/ person</p>
                 </div>
                 <div class="right-text total">
                   <h1 id="total-tip">$0.00</h1>
