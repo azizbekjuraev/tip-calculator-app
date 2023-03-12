@@ -49,7 +49,7 @@ i {
   justify-content: center;
   margin: 0 auto;
   padding: 4rem;
-  gap: 2rem;
+  gap: 3rem;
   border-radius: 1.3rem;
   width: 1000px;
 }
@@ -138,6 +138,9 @@ i {
   .right-background-clr {
     width: auto;
     margin-top: 1rem;
+  }
+  .container-color {
+    padding-top: 5rem;
   }
 }
 
